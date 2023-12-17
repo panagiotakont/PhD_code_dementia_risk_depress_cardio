@@ -1,9 +1,9 @@
 ﻿This readme file was generated on 2023-12-14 by PANAGIOTA KONTARI
 
 
-GENERAL INFORMATION
+# General Information
 
-Title of Datasets: 
+## Title of Datasets: 
 Data curation of the following datasets:
 1. English Longitudinal Study of Ageing (ELSA)
 2. Health and Retirement Study (HRS) 
@@ -11,7 +11,7 @@ Data curation of the following datasets:
 PhD project: 
 The role of depressive symptoms and cardiometabolic risk factors in the prediction of dementia: a cross-country comparison in England, the United States and China
 
-Principal Investigator Information
+## Principal Investigator Information
 Name: Panagiota Kontari
 ORCID:0000-0002-6652-4750
 Institution: School of Psychology, University of Surrey
@@ -19,7 +19,7 @@ Address: Guildford, United Kingdom
 Email: p.kontari@surrey.ac.uk
        panagiota.kontari@gmail.com
 
-Supervisor and Co-investigator Information
+## Supervisor and Co-investigator Information
 Name: Dr Kimberley Smith
 Institution: School of Psychology, University of Surrey
 Address: Guildford, United Kingdom
@@ -32,7 +32,7 @@ Geographic location of data sources: ELSA from England, HRS from United States, 
 
 
 
-SHARING/ACCESS INFORMATION
+# Sharing/Access Information
 
 Links to other publicly accessible locations of the data: 
 The ELSA data were made available through the UK Data Archive, which is freely available and can be accessed at https://ukdataservice.ac.uk/
@@ -57,7 +57,7 @@ HRS: The HRS (Health and Retirement Study) is sponsored by the National Institut
 CHARLS: Zhao, Y., Hu, Y., Smith, J. P., Strauss, J., & Yang, G. (2014). Cohort Profile: The China Health and Retirement Longitudinal Study (CHARLS). International Journal of Epidemiology, 43(1), 61. https://doi.org/10.1093/IJE/DYS203
 
 
-DATA & FILE OVERVIEW
+# Data & File overview
 
 File List: 
 1. elsa_code_w2_9_20190201.sps (open with SPSS)
@@ -68,7 +68,7 @@ Relationship between files, if important:
 The files include code in spss for data curation of the three datasets. Data curation includes cleaning, recoding and harmonising the variables of interest. 
 
 
-DATA-SPECIFIC INFORMATION 
+# Data-specific information 
 
 Variable List: 
 Outcome:
