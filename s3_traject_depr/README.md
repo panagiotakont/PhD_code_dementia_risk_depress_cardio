@@ -1,9 +1,9 @@
 ﻿This readme file was generated on 2023-12-16 by PANAGIOTA KONTARI
 
 
-GENERAL INFORMATION
+# General Information
 
-Title of Datasets: 
+## Title of Datasets: 
 Code for data analysis of Study 3: Trajectories of depressive symptoms and their relationship with dementia incidence
 Based on three databases:
 1. English Longitudinal Study of Ageing (ELSA)
@@ -12,7 +12,7 @@ Based on three databases:
 PhD project: 
 The role of depressive symptoms and cardiometabolic risk factors in the prediction of dementia: a cross-country comparison in England, the United States and China
 
-Principal Investigator Information
+## Principal Investigator Information
 Name: Panagiota Kontari
 ORCID:0000-0002-6652-4750
 Institution: School of Psychology, University of Surrey
@@ -20,7 +20,7 @@ Address: Guildford, United Kingdom
 Email: p.kontari@surrey.ac.uk
        panagiota.kontari@gmail.com
 
-Supervisor and Co-investigator Information
+## Supervisor and Co-investigator Information
 Name: Dr Kimberley Smith
 Institution: School of Psychology, University of Surrey
 Address: Guildford, United Kingdom
@@ -33,7 +33,7 @@ Geographic location of data sources: ELSA from England, HRS from United States, 
 
 
 
-SHARING/ACCESS INFORMATION
+# Sharing/Access information
 
 Links to other publicly accessible locations of the data: 
 The ELSA data were made available through the UK Data Archive, which is freely available and can be accessed at https://ukdataservice.ac.uk/
@@ -58,7 +58,7 @@ HRS: The HRS (Health and Retirement Study) is sponsored by the National Institut
 CHARLS: Zhao, Y., Hu, Y., Smith, J. P., Strauss, J., & Yang, G. (2014). Cohort Profile: The China Health and Retirement Longitudinal Study (CHARLS). International Journal of Epidemiology, 43(1), 61. https://doi.org/10.1093/IJE/DYS203
 
 
-DATA & FILE OVERVIEW
+# Data & File Overview
 
 File List: 
 1. s3_elsa_traject_depr_20210901.do (open with Stata)
@@ -73,7 +73,7 @@ The files include code in stata for the statistical analysis of Study 3.
 
 
 
-DATA-SPECIFIC INFORMATION 
+# Data-specific information 
 
 Exposure variables
 Depressive symptom trajectories
