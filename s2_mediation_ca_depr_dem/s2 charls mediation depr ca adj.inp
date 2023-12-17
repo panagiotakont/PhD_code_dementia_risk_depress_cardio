@@ -1,0 +1,59 @@
+TITLE:  SEMCHARLS MEDIATION OF DEP AND CM ON DEMENTIA
+
+DATA:
+    FILE IS "S:\Research\pkstudies\Study4_depr_cardio_path\CHARLS\charls_sem_THIS.csv";
+
+  VARIABLE:
+    NAMES ARE
+    sex age educ marital smoke alcohol cvd wealth 
+    dem depress1 effort1 sleep1 lonely1 bother1 
+    going1 mind1 fear1 happy1 hope1 cesdsc1 
+    cesddr1 depress2 effort2 sleep2 lonely2 
+    bother2 going2 mind2 fear2 happy2 hope2 
+    cesdsc2 cesddr2 crp1 hdl1 lobese1 obese1 
+    lsbp1 ldbp1 sbp1 dbp1 lhba1c1 hba1c1 diab1 
+    crp2 hdl2 lobese2 obese2 lsbp2 ldbp2 sbp2 
+    dbp2 lhba1c2 hba1c2 diab2 lcrp1 lcrp2 lhdl1 lhdl2;
+    USEVARIABLES ARE
+    sex age educ marital smoke alcohol cvd wealth
+    dem depress1 effort1 
+    sleep1 lonely1 bother1 going1 mind1 
+    fear1 happy1 hope1
+    crp2 hdl2 obese2 sbp2 dbp2 hba1c2 diab2;
+    CATEGORICAL ARE
+    dem depress1 effort1 
+    sleep1 lonely1 bother1 going1 mind1 
+    fear1 happy1 hope1
+    crp2 hdl2 obese2 sbp2 dbp2 hba1c2 diab2;
+    MISSING ARE 
+    age smoke alcohol cvd wealth 
+    depress1 effort1 
+    sleep1 lonely1 bother1 going1 mind1 
+    fear1 happy1 hope1
+    crp2 hdl2 obese2 sbp2 dbp2 hba1c2 diab2 (-99);
+
+
+
+MODEL:
+    DEP1 BY depress1 effort1 sleep1 lonely1 bother1 going1 
+    mind1 fear1 happy1 hope1;
+    CM2 BY crp2 hdl2 obese2 sbp2 dbp2 diab2 hba1c2;
+    dbp2 WITH sbp2;
+    diab2 WITH hba1c2;
+    DEP1 ON age sex educ marital wealth smoke alcohol cvd;
+    dem ON DEP1 CM2;
+    CM2 ON DEP1;
+
+MODEL INDIRECT:
+    dem IND DEP1;
+
+
+    
+
+ANALYSIS:
+    STARTS = 2000
+    PARAMETERIZATION = THETA;
+
+OUTPUT:   MODINDICES(10) RESIDUAL STANDARDIZED CINTERVAL TECH3 TECH4 TECH1;
+
+PLOT:     TYPE = PLOT2;

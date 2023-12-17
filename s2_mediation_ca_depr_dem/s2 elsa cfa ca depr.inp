@@ -1,0 +1,44 @@
+TITLE:  SEMELSA CFA OF CM AND DEP
+
+DATA:
+  FILE IS "S:\Research\pkstudies\Study4_depr_cardio_path\ELSA\elsa_sem_DEM3.csv";
+
+VARIABLE:
+    
+VARIABLE:
+    NAMES ARE
+    idauniq w2wtnur w2wtbld sex age 
+    educ marital wealth smoke alcohol 
+    cvd noiq_dem happy1 enlife1 depress1 
+    effort1 sleep1 lonely1 sad1 going1 
+    cesdsc1 cesddr1 happy2 enlife2 depress2 
+    effort2 sleep2 lonely2 sad2 going2 cesdsc2 
+    cesddr2 crp1 hdl1 lobese1 obese1 lsbp1 ldbp1 
+    sbp1 dbp1 diab1 lhba1c1 hba1c1 crp2 hdl2 
+    lobese2 obese2 lsbp2 ldbp2 sbp2 dbp2 diab2 
+    lhba1c2 hba1c2 dem lcrp1 lcrp2 lhdl1 lhdl2;
+    USEVARIABLES ARE
+    happy2 enlife2 depress2 effort2 sleep2 lonely2 sad2 going2
+    crp1 hdl1 obese1 sbp1 dbp1 diab1 hba1c1;
+    CATEGORICAL ARE
+    happy2 enlife2 depress2 effort2 sleep2 lonely2 sad2 going2
+    crp1 hdl1 obese1 sbp1 dbp1 diab1 hba1c1;
+    MISSING ARE
+    happy2 enlife2 depress2 effort2 sleep2 lonely2 sad2 going2
+    crp1 hdl1 obese1 sbp1 dbp1 diab1 hba1c1 (-99);
+
+MODEL:
+    CM1 BY crp1 hdl1 obese1 sbp1 dbp1 diab1 hba1c1;
+    DEP2 BY happy2 enlife2 depress2 effort2 sleep2 lonely2 sad2 going2;
+
+
+
+
+ANALYSIS:
+    STARTS = 200
+    PARAMETERIZATION = THETA;
+
+OUTPUT:   MODINDICES(10) RESIDUAL STANDARDIZED CINTERVAL TECH3 TECH4 TECH1;
+
+PLOT:     TYPE = PLOT2;
+
