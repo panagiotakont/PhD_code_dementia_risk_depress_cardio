@@ -1,7 +1,7 @@
 ﻿This readme file was generated on 2023-12-14 by PANAGIOTA KONTARI
 
 
-GENERAL INFORMATION
+# General Information
 
 Data analysis code of the PhD Project:
 The role of depressive symptoms and cardiometabolic risk factors in the prediction of dementia: a cross-country comparison in England, the United States and China
@@ -12,7 +12,7 @@ Based on the following three databases:
 3. China Health and Retirement Longitudinal Study (CHARLS) 
 
 
-Principal Investigator Information
+## Principal Investigator Information
 Name: Panagiota Kontari
 ORCID:0000-0002-6652-4750
 Institution: School of Psychology, University of Surrey
@@ -20,14 +20,14 @@ Address: Guildford, United Kingdom
 Email: p.kontari@surrey.ac.uk
        panagiota.kontari@gmail.com
 
-Supervisor and Co-investigator Information
+## Supervisor and Co-investigator Information
 Name: Dr Kimberley Smith
 Institution: School of Psychology, University of Surrey
 Address: Guildford, United Kingdom
 Email: kimberley.j.smith@surrey.ac.uk
 
 
-FOLDER OVERVIEW
+# Folder Overview
 
 Folder List: 
 1. elsa_hrs_charls_data_curation 
